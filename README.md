@@ -1,88 +1,140 @@
-# MealMind：基于自然语言理解的个性化菜品推荐系统
+# MealMind RAG 美食推荐系统
 
-MealMind 是一个面向日常吃饭场景的 NLP 应用系统。用户输入一句自然语言需求，例如“我今天有点累，想吃点热乎清淡的，预算 30 以内，不要辣”，系统会自动解析意图、预算、口味、忌口、健康需求和情绪场景，并从菜品数据集中推荐合适菜品。
+MealMind 现在只保留 RAG 推荐链路：使用中文 Embedding 模型将本地菜品向量化，
+通过 FAISS 召回候选菜品，再由 DeepSeek 严格依据候选信息生成推荐话术。
 
-## 核心功能
+## 核心流程
 
-- 自然语言需求输入
-- 用餐意图识别
-- 槽位抽取：预算、人数、口味、忌口、主食偏好、健康需求、情绪场景
-- 菜品数据库检索与硬性过滤
-- 100 分制可解释推荐排序
-- 推荐理由生成
-- 多轮补充条件更新
-- Streamlit 可视化演示界面
-
-## 技术栈
-
-- Python
-- Streamlit
-- pandas
-- scikit-learn
-- TF-IDF + Logistic Regression
-- 正则表达式与关键词词典
-- 规则打分推荐算法
-- TF-IDF 字符向量语义匹配
-- OpenAI 兼容的大模型 API（可选）
-
-## 三层语义理解
-
-系统按以下顺序理解用户需求：
-
-1. 规则词典识别常见口味、预算、忌口和场景。
-2. 对未命中的短语进行本地语义向量匹配，例如把“不罪恶”映射为“低热量/低脂”。
-3. 语义置信度不足时调用大模型转换为结构化标签；未配置 API 或模型仍不确定时，界面会让用户选择澄清项。
-
-未知表达和用户确认结果会追加到 `data/unknown_phrases.jsonl`，可用于后续扩充词典或训练集。菜品过滤和排序始终由本地推荐算法完成，大模型只负责低置信度理解和推荐理由生成。
-
-## 配置大模型 API
-
-直接在 `src/llm_config.py` 中填写 `LLM_API_KEY`。默认使用 OpenAI 兼容的 `/chat/completions` 接口，也可以修改 `LLM_BASE_URL` 和 `LLM_MODEL` 接入其他兼容服务。
-
-更推荐通过环境变量配置：
-
-```powershell
-$env:MEALMIND_LLM_API_KEY="你的密钥"
-$env:MEALMIND_LLM_BASE_URL="https://api.openai.com/v1"
-$env:MEALMIND_LLM_MODEL="gpt-4.1-mini"
-streamlit run app.py
-```
-
-API 未配置、超时或返回格式异常时，系统会自动回退到本地语义理解和规则推荐理由。
-
-## 运行方式
-
-```bash
-cd C:\Users\Vean\Desktop\MealMind
-streamlit run app.py
-```
-
-## 测试方式
-
-```bash
-cd C:\Users\Vean\Desktop\MealMind
-python tests/run_test_cases.py
+```text
+用户自然语言需求
+  -> BAAI/bge-small-zh-v1.5 查询向量
+  -> FAISS Top-K 相似度检索
+  -> 否定条件硬过滤（不辣、不要海鲜等）
+  -> 受约束的 RAG Prompt
+  -> DeepSeek 生成 2-3 道菜的推荐话术
 ```
 
 ## 项目结构
 
 ```text
 MealMind/
-  app.py
-  README.md
-  requirements.txt
   data/
-    dish_dataset.csv
-    intent_train.csv
+    dish_dataset.csv          # 菜品事实源
+    faiss_index/              # 本地向量索引和 metadata
+  scripts/
+    build_rag_index.py        # 离线建库脚本
   src/
-    active_learning.py
-    llm_client.py
-    llm_config.py
-    nlp.py
-    recommender.py
-    semantic_understanding.py
-    utils.py
+    rag/
+      api.py                  # FastAPI 接口
+      config.py               # RAG 配置
+      data_ingestion.py       # 数据加载和结构化文本生成
+      embedding.py            # sentence-transformers 封装
+      llm.py                  # DeepSeek API 客户端
+      prompts.py              # 防幻觉 Prompt
+      retriever.py            # FAISS 检索和否定条件过滤
+      service.py              # 完整 RAG 推荐服务
   tests/
-    run_test_cases.py
-    test_semantic_llm.py
+    test_rag.py
+```
+
+## 首次安装
+
+在项目根目录执行：
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+```
+
+当前仓库已经包含构建好的 FAISS 索引。只有修改 `data/dish_dataset.csv` 或更换
+Embedding 模型后，才需要重新建库：
+
+```powershell
+.\.venv\Scripts\python.exe scripts\build_rag_index.py
+```
+
+默认 Embedding 模型为 `BAAI/bge-small-zh-v1.5`。首次建库需要下载模型，之后会
+优先从本地缓存加载。也可以在建库前指定本地模型目录：
+
+```powershell
+$env:MEALMIND_EMBEDDING_MODEL="D:\models\bge-small-zh-v1.5"
+.\.venv\Scripts\python.exe scripts\build_rag_index.py
+```
+
+## 配置 DeepSeek
+
+打开 `src/rag/config.py`，填写：
+
+```python
+DEEPSEEK_API_KEY = "你的新 DeepSeek API Key"
+```
+
+保存后即可直接启动。不要把包含真实密钥的项目上传到公开仓库。
+
+也可以使用环境变量临时覆盖代码配置：
+
+```powershell
+$env:DEEPSEEK_API_KEY="替换成你的真实密钥"
+```
+
+默认配置：
+
+```text
+Base URL: https://api.deepseek.com
+Model: deepseek-v4-pro
+```
+
+可以通过 `MEALMIND_LLM_BASE_URL` 和 `MEALMIND_LLM_MODEL` 覆盖。
+
+## 启动项目
+
+项目现在只有一个入口：
+
+```powershell
+cd C:\PythonProject\MealMind
+$env:DEEPSEEK_API_KEY="替换成你的真实密钥"
+.\.venv\Scripts\python.exe -m uvicorn src.rag.api:app --host 127.0.0.1 --port 8000
+```
+
+浏览器打开：
+
+```text
+http://127.0.0.1:8000
+```
+
+根路径是面向普通用户的推荐页面，输入自然语言需求后点击“帮我推荐”即可。
+
+开发者接口文档仍保留在：
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+在 Swagger 的 `POST /recommend` 中可以输入：
+
+```json
+{
+  "query": "今天下雨，想吃点热乎的带汤的，不要辣",
+  "top_k": 5
+}
+```
+
+## API
+
+- `GET /`：美食推荐网页
+- `GET /health`：服务健康检查
+- `POST /recommend`：执行检索和 DeepSeek 推荐生成
+
+Python 函数调用：
+
+```python
+from src.rag.service import recommend_from_query
+
+result = recommend_from_query("想吃热乎的汤，不要辣")
+print(result["answer"])
+```
+
+## 测试
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```

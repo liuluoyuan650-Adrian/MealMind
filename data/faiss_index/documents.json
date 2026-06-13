@@ -1,0 +1,1362 @@
+[
+  {
+    "document_id": "dish-0001",
+    "text": "菜名：番茄鸡蛋面。类别：面食。口味：清淡 酸甜，不辣。温度：热。主要食材：番茄 鸡蛋 面条。适用场景：单人 晚餐 治愈。特点标签：热食 清淡 不辣 汤面 预算。价格：18 元。热量：480 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "番茄鸡蛋面",
+      "category": "面食",
+      "price": 18,
+      "taste": "清淡 酸甜",
+      "spicy": 0,
+      "calorie_kcal": 480,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "单人 晚餐 治愈",
+      "temperature": "热",
+      "ingredients": "番茄 鸡蛋 面条",
+      "avoid_tags": "无",
+      "rating": 4.6,
+      "tags": "热食 清淡 不辣 汤面 预算"
+    }
+  },
+  {
+    "document_id": "dish-0002",
+    "text": "菜名：皮蛋瘦肉粥。类别：粥类。口味：清淡 咸鲜，不辣。温度：热。主要食材：大米 皮蛋 猪肉。适用场景：早餐 夜宵 治愈。特点标签：清淡 不辣 易消化 热食 低油。价格：15 元。热量：320 千卡，热量等级低。饱腹感：3/5。",
+    "metadata": {
+      "name": "皮蛋瘦肉粥",
+      "category": "粥类",
+      "price": 15,
+      "taste": "清淡 咸鲜",
+      "spicy": 0,
+      "calorie_kcal": 320,
+      "calorie_level": "低",
+      "satiety": 3,
+      "scene": "早餐 夜宵 治愈",
+      "temperature": "热",
+      "ingredients": "大米 皮蛋 猪肉",
+      "avoid_tags": "无",
+      "rating": 4.5,
+      "tags": "清淡 不辣 易消化 热食 低油"
+    }
+  },
+  {
+    "document_id": "dish-0003",
+    "text": "菜名：菌菇汤面。类别：面食。口味：清淡 鲜香，不辣。温度：热。主要食材：菌菇 青菜 面条。适用场景：单人 晚餐 治愈。特点标签：清淡 热食 不辣 汤面 素食可选。价格：22 元。热量：430 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "菌菇汤面",
+      "category": "面食",
+      "price": 22,
+      "taste": "清淡 鲜香",
+      "spicy": 0,
+      "calorie_kcal": 430,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "单人 晚餐 治愈",
+      "temperature": "热",
+      "ingredients": "菌菇 青菜 面条",
+      "avoid_tags": "无",
+      "rating": 4.4,
+      "tags": "清淡 热食 不辣 汤面 素食可选"
+    }
+  },
+  {
+    "document_id": "dish-0004",
+    "text": "菜名：鸡胸肉蔬菜饭。类别：轻食。口味：清淡 咸香，不辣。温度：热。主要食材：鸡胸肉 西兰花 米饭。适用场景：减脂 高蛋白 单人。特点标签：高蛋白 低脂 饱腹 减脂。价格：28 元。热量：520 千卡，热量等级中。饱腹感：5/5。",
+    "metadata": {
+      "name": "鸡胸肉蔬菜饭",
+      "category": "轻食",
+      "price": 28,
+      "taste": "清淡 咸香",
+      "spicy": 0,
+      "calorie_kcal": 520,
+      "calorie_level": "中",
+      "satiety": 5,
+      "scene": "减脂 高蛋白 单人",
+      "temperature": "热",
+      "ingredients": "鸡胸肉 西兰花 米饭",
+      "avoid_tags": "无",
+      "rating": 4.7,
+      "tags": "高蛋白 低脂 饱腹 减脂"
+    }
+  },
+  {
+    "document_id": "dish-0005",
+    "text": "菜名：虾仁鸡蛋沙拉。类别：轻食。口味：清淡 鲜香，不辣。温度：冷。主要食材：虾仁 鸡蛋 生菜。适用场景：减脂 午餐。特点标签：低卡 高蛋白 清淡 冷食。价格：32 元。热量：360 千卡，热量等级低。饱腹感：3/5。",
+    "metadata": {
+      "name": "虾仁鸡蛋沙拉",
+      "category": "轻食",
+      "price": 32,
+      "taste": "清淡 鲜香",
+      "spicy": 0,
+      "calorie_kcal": 360,
+      "calorie_level": "低",
+      "satiety": 3,
+      "scene": "减脂 午餐",
+      "temperature": "冷",
+      "ingredients": "虾仁 鸡蛋 生菜",
+      "avoid_tags": "海鲜",
+      "rating": 4.4,
+      "tags": "低卡 高蛋白 清淡 冷食"
+    }
+  },
+  {
+    "document_id": "dish-0006",
+    "text": "菜名：番茄牛肉汤。类别：汤类。口味：酸甜 鲜香，不辣。温度：热。主要食材：番茄 牛肉。适用场景：减脂 治愈 晚餐。特点标签：热食 高蛋白 不辣 汤。价格：30 元。热量：410 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "番茄牛肉汤",
+      "category": "汤类",
+      "price": 30,
+      "taste": "酸甜 鲜香",
+      "spicy": 0,
+      "calorie_kcal": 410,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "减脂 治愈 晚餐",
+      "temperature": "热",
+      "ingredients": "番茄 牛肉",
+      "avoid_tags": "牛肉",
+      "rating": 4.6,
+      "tags": "热食 高蛋白 不辣 汤"
+    }
+  },
+  {
+    "document_id": "dish-0007",
+    "text": "菜名：牛肉粉丝汤。类别：粉面。口味：咸鲜，不辣。温度：热。主要食材：牛肉 粉丝 青菜。适用场景：夜宵 晚餐 饱腹。特点标签：热食 饱腹 不辣。价格：24 元。热量：510 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "牛肉粉丝汤",
+      "category": "粉面",
+      "price": 24,
+      "taste": "咸鲜",
+      "spicy": 0,
+      "calorie_kcal": 510,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "夜宵 晚餐 饱腹",
+      "temperature": "热",
+      "ingredients": "牛肉 粉丝 青菜",
+      "avoid_tags": "牛肉",
+      "rating": 4.5,
+      "tags": "热食 饱腹 不辣"
+    }
+  },
+  {
+    "document_id": "dish-0008",
+    "text": "菜名：关东煮。类别：小吃。口味：清淡 咸鲜，不辣。温度：热。主要食材：萝卜 鱼丸 豆腐。适用场景：夜宵 快速。特点标签：热食 夜宵 预算 清淡。价格：20 元。热量：390 千卡，热量等级中。饱腹感：3/5。",
+    "metadata": {
+      "name": "关东煮",
+      "category": "小吃",
+      "price": 20,
+      "taste": "清淡 咸鲜",
+      "spicy": 0,
+      "calorie_kcal": 390,
+      "calorie_level": "中",
+      "satiety": 3,
+      "scene": "夜宵 快速",
+      "temperature": "热",
+      "ingredients": "萝卜 鱼丸 豆腐",
+      "avoid_tags": "海鲜",
+      "rating": 4.3,
+      "tags": "热食 夜宵 预算 清淡"
+    }
+  },
+  {
+    "document_id": "dish-0009",
+    "text": "菜名：红豆双皮奶。类别：甜品。口味：甜，不辣。温度：冷。主要食材：红豆 牛奶。适用场景：甜食 治愈 下午茶。特点标签：甜品 治愈 不辣。价格：16 元。热量：280 千卡，热量等级低。饱腹感：2/5。",
+    "metadata": {
+      "name": "红豆双皮奶",
+      "category": "甜品",
+      "price": 16,
+      "taste": "甜",
+      "spicy": 0,
+      "calorie_kcal": 280,
+      "calorie_level": "低",
+      "satiety": 2,
+      "scene": "甜食 治愈 下午茶",
+      "temperature": "冷",
+      "ingredients": "红豆 牛奶",
+      "avoid_tags": "乳制品",
+      "rating": 4.8,
+      "tags": "甜品 治愈 不辣"
+    }
+  },
+  {
+    "document_id": "dish-0010",
+    "text": "菜名：芋泥麻薯。类别：甜品。口味：甜，不辣。温度：冷。主要食材：芋泥 糯米。适用场景：甜食 治愈 下午茶。特点标签：甜品 治愈 饱腹。价格：18 元。热量：420 千卡，热量等级中。饱腹感：3/5。",
+    "metadata": {
+      "name": "芋泥麻薯",
+      "category": "甜品",
+      "price": 18,
+      "taste": "甜",
+      "spicy": 0,
+      "calorie_kcal": 420,
+      "calorie_level": "中",
+      "satiety": 3,
+      "scene": "甜食 治愈 下午茶",
+      "temperature": "冷",
+      "ingredients": "芋泥 糯米",
+      "avoid_tags": "无",
+      "rating": 4.7,
+      "tags": "甜品 治愈 饱腹"
+    }
+  },
+  {
+    "document_id": "dish-0011",
+    "text": "菜名：热可可。类别：饮品。口味：甜，不辣。温度：热。主要食材：牛奶 可可。适用场景：甜食 治愈。特点标签：热饮 甜品 治愈。价格：14 元。热量：220 千卡，热量等级低。饱腹感：1/5。",
+    "metadata": {
+      "name": "热可可",
+      "category": "饮品",
+      "price": 14,
+      "taste": "甜",
+      "spicy": 0,
+      "calorie_kcal": 220,
+      "calorie_level": "低",
+      "satiety": 1,
+      "scene": "甜食 治愈",
+      "temperature": "热",
+      "ingredients": "牛奶 可可",
+      "avoid_tags": "乳制品",
+      "rating": 4.5,
+      "tags": "热饮 甜品 治愈"
+    }
+  },
+  {
+    "document_id": "dish-0012",
+    "text": "菜名：蛋挞。类别：甜品。口味：甜 香，不辣。温度：热。主要食材：鸡蛋 牛奶 面皮。适用场景：甜食 下午茶。特点标签：甜品 热食 预算。价格：12 元。热量：260 千卡，热量等级低。饱腹感：2/5。",
+    "metadata": {
+      "name": "蛋挞",
+      "category": "甜品",
+      "price": 12,
+      "taste": "甜 香",
+      "spicy": 0,
+      "calorie_kcal": 260,
+      "calorie_level": "低",
+      "satiety": 2,
+      "scene": "甜食 下午茶",
+      "temperature": "热",
+      "ingredients": "鸡蛋 牛奶 面皮",
+      "avoid_tags": "乳制品",
+      "rating": 4.4,
+      "tags": "甜品 热食 预算"
+    }
+  },
+  {
+    "document_id": "dish-0013",
+    "text": "菜名：银耳莲子羹。类别：甜品。口味：清甜，不辣。温度：热。主要食材：银耳 莲子。适用场景：夜宵 治愈 甜食。特点标签：甜品 热食 清淡。价格：18 元。热量：210 千卡，热量等级低。饱腹感：2/5。",
+    "metadata": {
+      "name": "银耳莲子羹",
+      "category": "甜品",
+      "price": 18,
+      "taste": "清甜",
+      "spicy": 0,
+      "calorie_kcal": 210,
+      "calorie_level": "低",
+      "satiety": 2,
+      "scene": "夜宵 治愈 甜食",
+      "temperature": "热",
+      "ingredients": "银耳 莲子",
+      "avoid_tags": "无",
+      "rating": 4.6,
+      "tags": "甜品 热食 清淡"
+    }
+  },
+  {
+    "document_id": "dish-0014",
+    "text": "菜名：土豆炖鸡。类别：家常菜。口味：咸香，不辣。温度：热。主要食材：土豆 鸡肉。适用场景：多人 聚餐 饱腹。特点标签：家常 肉类 饱腹 不辣。价格：28 元。热量：620 千卡，热量等级中。饱腹感：5/5。",
+    "metadata": {
+      "name": "土豆炖鸡",
+      "category": "家常菜",
+      "price": 28,
+      "taste": "咸香",
+      "spicy": 0,
+      "calorie_kcal": 620,
+      "calorie_level": "中",
+      "satiety": 5,
+      "scene": "多人 聚餐 饱腹",
+      "temperature": "热",
+      "ingredients": "土豆 鸡肉",
+      "avoid_tags": "无",
+      "rating": 4.5,
+      "tags": "家常 肉类 饱腹 不辣"
+    }
+  },
+  {
+    "document_id": "dish-0015",
+    "text": "菜名：番茄牛腩。类别：家常菜。口味：酸甜 咸鲜，不辣。温度：热。主要食材：番茄 牛腩。适用场景：多人 聚餐 晚餐。特点标签：热食 肉类 不辣 聚餐。价格：35 元。热量：650 千卡，热量等级中。饱腹感：5/5。",
+    "metadata": {
+      "name": "番茄牛腩",
+      "category": "家常菜",
+      "price": 35,
+      "taste": "酸甜 咸鲜",
+      "spicy": 0,
+      "calorie_kcal": 650,
+      "calorie_level": "中",
+      "satiety": 5,
+      "scene": "多人 聚餐 晚餐",
+      "temperature": "热",
+      "ingredients": "番茄 牛腩",
+      "avoid_tags": "牛肉",
+      "rating": 4.7,
+      "tags": "热食 肉类 不辣 聚餐"
+    }
+  },
+  {
+    "document_id": "dish-0016",
+    "text": "菜名：白切鸡。类别：粤菜。口味：清淡 咸鲜，不辣。温度：冷。主要食材：鸡肉。适用场景：多人 聚餐 高蛋白。特点标签：清淡 肉类 不辣 高蛋白。价格：38 元。热量：540 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "白切鸡",
+      "category": "粤菜",
+      "price": 38,
+      "taste": "清淡 咸鲜",
+      "spicy": 0,
+      "calorie_kcal": 540,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "多人 聚餐 高蛋白",
+      "temperature": "冷",
+      "ingredients": "鸡肉",
+      "avoid_tags": "无",
+      "rating": 4.5,
+      "tags": "清淡 肉类 不辣 高蛋白"
+    }
+  },
+  {
+    "document_id": "dish-0017",
+    "text": "菜名：清蒸鱼。类别：家常菜。口味：清淡 鲜香，不辣。温度：热。主要食材：鱼。适用场景：多人 聚餐 健康。特点标签：清淡 高蛋白 不辣。价格：42 元。热量：500 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "清蒸鱼",
+      "category": "家常菜",
+      "price": 42,
+      "taste": "清淡 鲜香",
+      "spicy": 0,
+      "calorie_kcal": 500,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "多人 聚餐 健康",
+      "temperature": "热",
+      "ingredients": "鱼",
+      "avoid_tags": "海鲜",
+      "rating": 4.6,
+      "tags": "清淡 高蛋白 不辣"
+    }
+  },
+  {
+    "document_id": "dish-0018",
+    "text": "菜名：菌菇鸡汤。类别：汤类。口味：清淡 鲜香，不辣。温度：热。主要食材：鸡肉 菌菇。适用场景：多人 治愈 晚餐。特点标签：热食 清淡 汤 不辣。价格：30 元。热量：430 千卡，热量等级中。饱腹感：3/5。",
+    "metadata": {
+      "name": "菌菇鸡汤",
+      "category": "汤类",
+      "price": 30,
+      "taste": "清淡 鲜香",
+      "spicy": 0,
+      "calorie_kcal": 430,
+      "calorie_level": "中",
+      "satiety": 3,
+      "scene": "多人 治愈 晚餐",
+      "temperature": "热",
+      "ingredients": "鸡肉 菌菇",
+      "avoid_tags": "无",
+      "rating": 4.5,
+      "tags": "热食 清淡 汤 不辣"
+    }
+  },
+  {
+    "document_id": "dish-0019",
+    "text": "菜名：小馄饨。类别：馄饨。口味：清淡 咸鲜，不辣。温度：热。主要食材：猪肉 馄饨皮。适用场景：夜宵 早餐 快速。特点标签：热食 预算 不辣。价格：16 元。热量：360 千卡，热量等级低。饱腹感：3/5。",
+    "metadata": {
+      "name": "小馄饨",
+      "category": "馄饨",
+      "price": 16,
+      "taste": "清淡 咸鲜",
+      "spicy": 0,
+      "calorie_kcal": 360,
+      "calorie_level": "低",
+      "satiety": 3,
+      "scene": "夜宵 早餐 快速",
+      "temperature": "热",
+      "ingredients": "猪肉 馄饨皮",
+      "avoid_tags": "无",
+      "rating": 4.4,
+      "tags": "热食 预算 不辣"
+    }
+  },
+  {
+    "document_id": "dish-0020",
+    "text": "菜名：牛肉汤粉。类别：粉面。口味：咸鲜，不辣。温度：热。主要食材：牛肉 米粉。适用场景：夜宵 晚餐 饱腹。特点标签：热食 夜宵 饱腹。价格：24 元。热量：520 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "牛肉汤粉",
+      "category": "粉面",
+      "price": 24,
+      "taste": "咸鲜",
+      "spicy": 0,
+      "calorie_kcal": 520,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "夜宵 晚餐 饱腹",
+      "temperature": "热",
+      "ingredients": "牛肉 米粉",
+      "avoid_tags": "牛肉",
+      "rating": 4.4,
+      "tags": "热食 夜宵 饱腹"
+    }
+  },
+  {
+    "document_id": "dish-0021",
+    "text": "菜名：清蒸鸡腿饭。类别：盖饭。口味：清淡 咸香，不辣。温度：热。主要食材：鸡腿 米饭 青菜。适用场景：单人 晚餐 高蛋白。特点标签：热食 高蛋白 不辣 饱腹。价格：26 元。热量：560 千卡，热量等级中。饱腹感：5/5。",
+    "metadata": {
+      "name": "清蒸鸡腿饭",
+      "category": "盖饭",
+      "price": 26,
+      "taste": "清淡 咸香",
+      "spicy": 0,
+      "calorie_kcal": 560,
+      "calorie_level": "中",
+      "satiety": 5,
+      "scene": "单人 晚餐 高蛋白",
+      "temperature": "热",
+      "ingredients": "鸡腿 米饭 青菜",
+      "avoid_tags": "无",
+      "rating": 4.5,
+      "tags": "热食 高蛋白 不辣 饱腹"
+    }
+  },
+  {
+    "document_id": "dish-0022",
+    "text": "菜名：鸡蛋羹。类别：家常菜。口味：清淡，不辣。温度：热。主要食材：鸡蛋。适用场景：清淡 早餐 生病。特点标签：清淡 不辣 低卡 热食。价格：12 元。热量：180 千卡，热量等级低。饱腹感：2/5。",
+    "metadata": {
+      "name": "鸡蛋羹",
+      "category": "家常菜",
+      "price": 12,
+      "taste": "清淡",
+      "spicy": 0,
+      "calorie_kcal": 180,
+      "calorie_level": "低",
+      "satiety": 2,
+      "scene": "清淡 早餐 生病",
+      "temperature": "热",
+      "ingredients": "鸡蛋",
+      "avoid_tags": "无",
+      "rating": 4.2,
+      "tags": "清淡 不辣 低卡 热食"
+    }
+  },
+  {
+    "document_id": "dish-0023",
+    "text": "菜名：紫菜蛋花汤。类别：汤类。口味：清淡 鲜香，不辣。温度：热。主要食材：紫菜 鸡蛋。适用场景：清淡 快速。特点标签：清淡 不辣 低卡 汤。价格：10 元。热量：120 千卡，热量等级低。饱腹感：1/5。",
+    "metadata": {
+      "name": "紫菜蛋花汤",
+      "category": "汤类",
+      "price": 10,
+      "taste": "清淡 鲜香",
+      "spicy": 0,
+      "calorie_kcal": 120,
+      "calorie_level": "低",
+      "satiety": 1,
+      "scene": "清淡 快速",
+      "temperature": "热",
+      "ingredients": "紫菜 鸡蛋",
+      "avoid_tags": "无",
+      "rating": 4.1,
+      "tags": "清淡 不辣 低卡 汤"
+    }
+  },
+  {
+    "document_id": "dish-0024",
+    "text": "菜名：黄焖鸡米饭。类别：盖饭。口味：咸香，辣度 1。温度：热。主要食材：鸡肉 土豆 米饭。适用场景：单人 饱腹 晚餐。特点标签：热食 饱腹 预算。价格：25 元。热量：720 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "黄焖鸡米饭",
+      "category": "盖饭",
+      "price": 25,
+      "taste": "咸香",
+      "spicy": 1,
+      "calorie_kcal": 720,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "单人 饱腹 晚餐",
+      "temperature": "热",
+      "ingredients": "鸡肉 土豆 米饭",
+      "avoid_tags": "无",
+      "rating": 4.5,
+      "tags": "热食 饱腹 预算"
+    }
+  },
+  {
+    "document_id": "dish-0025",
+    "text": "菜名：麻辣香锅。类别：川菜。口味：麻辣，辣度 3。温度：热。主要食材：蔬菜 丸子 肉类。适用场景：重口 聚餐 夜宵。特点标签：麻辣 重口 辣 饱腹。价格：38 元。热量：900 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "麻辣香锅",
+      "category": "川菜",
+      "price": 38,
+      "taste": "麻辣",
+      "spicy": 3,
+      "calorie_kcal": 900,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "重口 聚餐 夜宵",
+      "temperature": "热",
+      "ingredients": "蔬菜 丸子 肉类",
+      "avoid_tags": "辣椒",
+      "rating": 4.6,
+      "tags": "麻辣 重口 辣 饱腹"
+    }
+  },
+  {
+    "document_id": "dish-0026",
+    "text": "菜名：川味冒菜。类别：川菜。口味：麻辣，辣度 3。温度：热。主要食材：蔬菜 丸子 牛肉。适用场景：重口 单人 晚餐。特点标签：麻辣 辣 热食。价格：32 元。热量：780 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "川味冒菜",
+      "category": "川菜",
+      "price": 32,
+      "taste": "麻辣",
+      "spicy": 3,
+      "calorie_kcal": 780,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "重口 单人 晚餐",
+      "temperature": "热",
+      "ingredients": "蔬菜 丸子 牛肉",
+      "avoid_tags": "辣椒 牛肉",
+      "rating": 4.5,
+      "tags": "麻辣 辣 热食"
+    }
+  },
+  {
+    "document_id": "dish-0027",
+    "text": "菜名：香辣鸡腿堡。类别：快餐。口味：香辣，辣度 2。温度：热。主要食材：鸡肉 面包。适用场景：快速 夜宵。特点标签：快餐 辣 饱腹。价格：22 元。热量：680 千卡，热量等级高。饱腹感：4/5。",
+    "metadata": {
+      "name": "香辣鸡腿堡",
+      "category": "快餐",
+      "price": 22,
+      "taste": "香辣",
+      "spicy": 2,
+      "calorie_kcal": 680,
+      "calorie_level": "高",
+      "satiety": 4,
+      "scene": "快速 夜宵",
+      "temperature": "热",
+      "ingredients": "鸡肉 面包",
+      "avoid_tags": "辣椒",
+      "rating": 4.3,
+      "tags": "快餐 辣 饱腹"
+    }
+  },
+  {
+    "document_id": "dish-0028",
+    "text": "菜名：烤鸡腿饭。类别：盖饭。口味：咸香，不辣。温度：热。主要食材：鸡腿 米饭。适用场景：单人 饱腹 高蛋白。特点标签：肉类 饱腹 高蛋白。价格：28 元。热量：690 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "烤鸡腿饭",
+      "category": "盖饭",
+      "price": 28,
+      "taste": "咸香",
+      "spicy": 0,
+      "calorie_kcal": 690,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "单人 饱腹 高蛋白",
+      "temperature": "热",
+      "ingredients": "鸡腿 米饭",
+      "avoid_tags": "无",
+      "rating": 4.6,
+      "tags": "肉类 饱腹 高蛋白"
+    }
+  },
+  {
+    "document_id": "dish-0029",
+    "text": "菜名：酸菜鱼片饭。类别：盖饭。口味：酸辣，辣度 2。温度：热。主要食材：鱼 酸菜 米饭。适用场景：单人 晚餐。特点标签：酸辣 热食 饱腹。价格：34 元。热量：620 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "酸菜鱼片饭",
+      "category": "盖饭",
+      "price": 34,
+      "taste": "酸辣",
+      "spicy": 2,
+      "calorie_kcal": 620,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "单人 晚餐",
+      "temperature": "热",
+      "ingredients": "鱼 酸菜 米饭",
+      "avoid_tags": "海鲜 辣椒",
+      "rating": 4.5,
+      "tags": "酸辣 热食 饱腹"
+    }
+  },
+  {
+    "document_id": "dish-0030",
+    "text": "菜名：糖醋里脊饭。类别：盖饭。口味：酸甜，不辣。温度：热。主要食材：猪肉 米饭。适用场景：单人 晚餐。特点标签：酸甜 肉类 饱腹 不辣。价格：27 元。热量：700 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "糖醋里脊饭",
+      "category": "盖饭",
+      "price": 27,
+      "taste": "酸甜",
+      "spicy": 0,
+      "calorie_kcal": 700,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "单人 晚餐",
+      "temperature": "热",
+      "ingredients": "猪肉 米饭",
+      "avoid_tags": "无",
+      "rating": 4.4,
+      "tags": "酸甜 肉类 饱腹 不辣"
+    }
+  },
+  {
+    "document_id": "dish-0031",
+    "text": "菜名：低脂牛肉饭。类别：轻食。口味：清淡 咸香，不辣。温度：热。主要食材：牛肉 米饭 西兰花。适用场景：减脂 高蛋白 饱腹。特点标签：高蛋白 减脂 饱腹。价格：35 元。热量：580 千卡，热量等级中。饱腹感：5/5。",
+    "metadata": {
+      "name": "低脂牛肉饭",
+      "category": "轻食",
+      "price": 35,
+      "taste": "清淡 咸香",
+      "spicy": 0,
+      "calorie_kcal": 580,
+      "calorie_level": "中",
+      "satiety": 5,
+      "scene": "减脂 高蛋白 饱腹",
+      "temperature": "热",
+      "ingredients": "牛肉 米饭 西兰花",
+      "avoid_tags": "牛肉",
+      "rating": 4.6,
+      "tags": "高蛋白 减脂 饱腹"
+    }
+  },
+  {
+    "document_id": "dish-0032",
+    "text": "菜名：豆腐蔬菜煲。类别：素食。口味：清淡 鲜香，不辣。温度：热。主要食材：豆腐 青菜 菌菇。适用场景：清淡 素食 晚餐。特点标签：清淡 素食 热食 低卡。价格：24 元。热量：360 千卡，热量等级低。饱腹感：3/5。",
+    "metadata": {
+      "name": "豆腐蔬菜煲",
+      "category": "素食",
+      "price": 24,
+      "taste": "清淡 鲜香",
+      "spicy": 0,
+      "calorie_kcal": 360,
+      "calorie_level": "低",
+      "satiety": 3,
+      "scene": "清淡 素食 晚餐",
+      "temperature": "热",
+      "ingredients": "豆腐 青菜 菌菇",
+      "avoid_tags": "无",
+      "rating": 4.3,
+      "tags": "清淡 素食 热食 低卡"
+    }
+  },
+  {
+    "document_id": "dish-0033",
+    "text": "菜名：素三鲜水饺。类别：饺子。口味：清淡 咸鲜，不辣。温度：热。主要食材：韭菜 鸡蛋 木耳。适用场景：单人 快速。特点标签：不辣 饱腹 预算。价格：20 元。热量：460 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "素三鲜水饺",
+      "category": "饺子",
+      "price": 20,
+      "taste": "清淡 咸鲜",
+      "spicy": 0,
+      "calorie_kcal": 460,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "单人 快速",
+      "temperature": "热",
+      "ingredients": "韭菜 鸡蛋 木耳",
+      "avoid_tags": "无",
+      "rating": 4.4,
+      "tags": "不辣 饱腹 预算"
+    }
+  },
+  {
+    "document_id": "dish-0034",
+    "text": "菜名：猪肉白菜水饺。类别：饺子。口味：咸鲜，不辣。温度：热。主要食材：猪肉 白菜。适用场景：单人 夜宵。特点标签：热食 饱腹 不辣。价格：22 元。热量：560 千卡，热量等级中。饱腹感：5/5。",
+    "metadata": {
+      "name": "猪肉白菜水饺",
+      "category": "饺子",
+      "price": 22,
+      "taste": "咸鲜",
+      "spicy": 0,
+      "calorie_kcal": 560,
+      "calorie_level": "中",
+      "satiety": 5,
+      "scene": "单人 夜宵",
+      "temperature": "热",
+      "ingredients": "猪肉 白菜",
+      "avoid_tags": "无",
+      "rating": 4.4,
+      "tags": "热食 饱腹 不辣"
+    }
+  },
+  {
+    "document_id": "dish-0035",
+    "text": "菜名：鸡丝凉面。类别：面食。口味：清爽 咸香，辣度 1。温度：冷。主要食材：鸡肉 面条。适用场景：夏天 快速。特点标签：冷食 饱腹 微辣。价格：20 元。热量：520 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "鸡丝凉面",
+      "category": "面食",
+      "price": 20,
+      "taste": "清爽 咸香",
+      "spicy": 1,
+      "calorie_kcal": 520,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "夏天 快速",
+      "temperature": "冷",
+      "ingredients": "鸡肉 面条",
+      "avoid_tags": "辣椒",
+      "rating": 4.2,
+      "tags": "冷食 饱腹 微辣"
+    }
+  },
+  {
+    "document_id": "dish-0036",
+    "text": "菜名：酸奶燕麦杯。类别：轻食。口味：酸甜，不辣。温度：冷。主要食材：酸奶 燕麦 水果。适用场景：减脂 早餐。特点标签：低卡 冷食 减脂。价格：18 元。热量：260 千卡，热量等级低。饱腹感：2/5。",
+    "metadata": {
+      "name": "酸奶燕麦杯",
+      "category": "轻食",
+      "price": 18,
+      "taste": "酸甜",
+      "spicy": 0,
+      "calorie_kcal": 260,
+      "calorie_level": "低",
+      "satiety": 2,
+      "scene": "减脂 早餐",
+      "temperature": "冷",
+      "ingredients": "酸奶 燕麦 水果",
+      "avoid_tags": "乳制品",
+      "rating": 4.3,
+      "tags": "低卡 冷食 减脂"
+    }
+  },
+  {
+    "document_id": "dish-0037",
+    "text": "菜名：三明治套餐。类别：轻食。口味：清淡 咸香，不辣。温度：冷。主要食材：面包 鸡蛋 火腿。适用场景：早餐 快速。特点标签：快速 不辣 预算。价格：24 元。热量：430 千卡，热量等级中。饱腹感：3/5。",
+    "metadata": {
+      "name": "三明治套餐",
+      "category": "轻食",
+      "price": 24,
+      "taste": "清淡 咸香",
+      "spicy": 0,
+      "calorie_kcal": 430,
+      "calorie_level": "中",
+      "satiety": 3,
+      "scene": "早餐 快速",
+      "temperature": "冷",
+      "ingredients": "面包 鸡蛋 火腿",
+      "avoid_tags": "无",
+      "rating": 4.2,
+      "tags": "快速 不辣 预算"
+    }
+  },
+  {
+    "document_id": "dish-0038",
+    "text": "菜名：鸡肉凯撒卷。类别：轻食。口味：咸香，不辣。温度：冷。主要食材：鸡肉 生菜 卷饼。适用场景：减脂 快速。特点标签：高蛋白 轻食 饱腹。价格：26 元。热量：480 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "鸡肉凯撒卷",
+      "category": "轻食",
+      "price": 26,
+      "taste": "咸香",
+      "spicy": 0,
+      "calorie_kcal": 480,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "减脂 快速",
+      "temperature": "冷",
+      "ingredients": "鸡肉 生菜 卷饼",
+      "avoid_tags": "无",
+      "rating": 4.4,
+      "tags": "高蛋白 轻食 饱腹"
+    }
+  },
+  {
+    "document_id": "dish-0039",
+    "text": "菜名：海鲜粥。类别：粥类。口味：清淡 鲜香，不辣。温度：热。主要食材：虾 蟹 大米。适用场景：夜宵 清淡。特点标签：清淡 热食 低油。价格：28 元。热量：340 千卡，热量等级低。饱腹感：3/5。",
+    "metadata": {
+      "name": "海鲜粥",
+      "category": "粥类",
+      "price": 28,
+      "taste": "清淡 鲜香",
+      "spicy": 0,
+      "calorie_kcal": 340,
+      "calorie_level": "低",
+      "satiety": 3,
+      "scene": "夜宵 清淡",
+      "temperature": "热",
+      "ingredients": "虾 蟹 大米",
+      "avoid_tags": "海鲜",
+      "rating": 4.5,
+      "tags": "清淡 热食 低油"
+    }
+  },
+  {
+    "document_id": "dish-0040",
+    "text": "菜名：南瓜小米粥。类别：粥类。口味：清甜，不辣。温度：热。主要食材：南瓜 小米。适用场景：早餐 治愈 清淡。特点标签：清淡 热食 预算。价格：12 元。热量：220 千卡，热量等级低。饱腹感：2/5。",
+    "metadata": {
+      "name": "南瓜小米粥",
+      "category": "粥类",
+      "price": 12,
+      "taste": "清甜",
+      "spicy": 0,
+      "calorie_kcal": 220,
+      "calorie_level": "低",
+      "satiety": 2,
+      "scene": "早餐 治愈 清淡",
+      "temperature": "热",
+      "ingredients": "南瓜 小米",
+      "avoid_tags": "无",
+      "rating": 4.4,
+      "tags": "清淡 热食 预算"
+    }
+  },
+  {
+    "document_id": "dish-0041",
+    "text": "菜名：葱油拌面。类别：面食。口味：咸香，不辣。温度：热。主要食材：面条 葱油。适用场景：快速 预算。特点标签：预算 饱腹 不辣。价格：16 元。热量：580 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "葱油拌面",
+      "category": "面食",
+      "price": 16,
+      "taste": "咸香",
+      "spicy": 0,
+      "calorie_kcal": 580,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "快速 预算",
+      "temperature": "热",
+      "ingredients": "面条 葱油",
+      "avoid_tags": "无",
+      "rating": 4.3,
+      "tags": "预算 饱腹 不辣"
+    }
+  },
+  {
+    "document_id": "dish-0042",
+    "text": "菜名：牛肉汉堡套餐。类别：快餐。口味：咸香，不辣。温度：热。主要食材：牛肉 面包 薯条。适用场景：快速 饱腹。特点标签：快餐 饱腹 高热量。价格：34 元。热量：850 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "牛肉汉堡套餐",
+      "category": "快餐",
+      "price": 34,
+      "taste": "咸香",
+      "spicy": 0,
+      "calorie_kcal": 850,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "快速 饱腹",
+      "temperature": "热",
+      "ingredients": "牛肉 面包 薯条",
+      "avoid_tags": "牛肉",
+      "rating": 4.2,
+      "tags": "快餐 饱腹 高热量"
+    }
+  },
+  {
+    "document_id": "dish-0043",
+    "text": "菜名：炸鸡套餐。类别：快餐。口味：咸香，不辣。温度：热。主要食材：鸡肉 薯条。适用场景：夜宵 治愈。特点标签：高热量 夜宵 治愈。价格：32 元。热量：920 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "炸鸡套餐",
+      "category": "快餐",
+      "price": 32,
+      "taste": "咸香",
+      "spicy": 0,
+      "calorie_kcal": 920,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "夜宵 治愈",
+      "temperature": "热",
+      "ingredients": "鸡肉 薯条",
+      "avoid_tags": "无",
+      "rating": 4.4,
+      "tags": "高热量 夜宵 治愈"
+    }
+  },
+  {
+    "document_id": "dish-0044",
+    "text": "菜名：麻辣烫。类别：小吃。口味：麻辣，辣度 3。温度：热。主要食材：蔬菜 丸子 面筋。适用场景：单人 夜宵 重口。特点标签：辣 热食 饱腹。价格：25 元。热量：760 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "麻辣烫",
+      "category": "小吃",
+      "price": 25,
+      "taste": "麻辣",
+      "spicy": 3,
+      "calorie_kcal": 760,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "单人 夜宵 重口",
+      "temperature": "热",
+      "ingredients": "蔬菜 丸子 面筋",
+      "avoid_tags": "辣椒",
+      "rating": 4.5,
+      "tags": "辣 热食 饱腹"
+    }
+  },
+  {
+    "document_id": "dish-0045",
+    "text": "菜名：清汤麻辣烫。类别：小吃。口味：清淡 咸鲜，不辣。温度：热。主要食材：蔬菜 丸子 粉丝。适用场景：单人 夜宵。特点标签：热食 不辣 饱腹。价格：25 元。热量：560 千卡，热量等级中。饱腹感：5/5。",
+    "metadata": {
+      "name": "清汤麻辣烫",
+      "category": "小吃",
+      "price": 25,
+      "taste": "清淡 咸鲜",
+      "spicy": 0,
+      "calorie_kcal": 560,
+      "calorie_level": "中",
+      "satiety": 5,
+      "scene": "单人 夜宵",
+      "temperature": "热",
+      "ingredients": "蔬菜 丸子 粉丝",
+      "avoid_tags": "无",
+      "rating": 4.3,
+      "tags": "热食 不辣 饱腹"
+    }
+  },
+  {
+    "document_id": "dish-0046",
+    "text": "菜名：照烧鸡排饭。类别：盖饭。口味：甜咸，不辣。温度：热。主要食材：鸡排 米饭。适用场景：单人 饱腹。特点标签：肉类 饱腹 不辣。价格：26 元。热量：710 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "照烧鸡排饭",
+      "category": "盖饭",
+      "price": 26,
+      "taste": "甜咸",
+      "spicy": 0,
+      "calorie_kcal": 710,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "单人 饱腹",
+      "temperature": "热",
+      "ingredients": "鸡排 米饭",
+      "avoid_tags": "无",
+      "rating": 4.5,
+      "tags": "肉类 饱腹 不辣"
+    }
+  },
+  {
+    "document_id": "dish-0047",
+    "text": "菜名：咖喱鸡肉饭。类别：盖饭。口味：咖喱 咸香，辣度 1。温度：热。主要食材：鸡肉 土豆 米饭。适用场景：单人 晚餐。特点标签：热食 饱腹 微辣。价格：28 元。热量：760 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "咖喱鸡肉饭",
+      "category": "盖饭",
+      "price": 28,
+      "taste": "咖喱 咸香",
+      "spicy": 1,
+      "calorie_kcal": 760,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "单人 晚餐",
+      "temperature": "热",
+      "ingredients": "鸡肉 土豆 米饭",
+      "avoid_tags": "无",
+      "rating": 4.4,
+      "tags": "热食 饱腹 微辣"
+    }
+  },
+  {
+    "document_id": "dish-0048",
+    "text": "菜名：蔬菜鸡蛋炒饭。类别：炒饭。口味：咸香，不辣。温度：热。主要食材：米饭 鸡蛋 蔬菜。适用场景：快速 预算 夜宵。特点标签：预算 饱腹 不辣。价格：20 元。热量：650 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "蔬菜鸡蛋炒饭",
+      "category": "炒饭",
+      "price": 20,
+      "taste": "咸香",
+      "spicy": 0,
+      "calorie_kcal": 650,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "快速 预算 夜宵",
+      "temperature": "热",
+      "ingredients": "米饭 鸡蛋 蔬菜",
+      "avoid_tags": "无",
+      "rating": 4.2,
+      "tags": "预算 饱腹 不辣"
+    }
+  },
+  {
+    "document_id": "dish-0049",
+    "text": "菜名：番茄炒蛋盖饭。类别：盖饭。口味：酸甜 清淡，不辣。温度：热。主要食材：番茄 鸡蛋 米饭。适用场景：预算 单人。特点标签：预算 不辣 饱腹。价格：18 元。热量：590 千卡，热量等级中。饱腹感：5/5。",
+    "metadata": {
+      "name": "番茄炒蛋盖饭",
+      "category": "盖饭",
+      "price": 18,
+      "taste": "酸甜 清淡",
+      "spicy": 0,
+      "calorie_kcal": 590,
+      "calorie_level": "中",
+      "satiety": 5,
+      "scene": "预算 单人",
+      "temperature": "热",
+      "ingredients": "番茄 鸡蛋 米饭",
+      "avoid_tags": "无",
+      "rating": 4.5,
+      "tags": "预算 不辣 饱腹"
+    }
+  },
+  {
+    "document_id": "dish-0050",
+    "text": "菜名：清汤牛肉面。类别：面食。口味：清淡 咸鲜，不辣。温度：热。主要食材：牛肉 面条。适用场景：单人 晚餐。特点标签：热食 清淡 饱腹。价格：26 元。热量：570 千卡，热量等级中。饱腹感：5/5。",
+    "metadata": {
+      "name": "清汤牛肉面",
+      "category": "面食",
+      "price": 26,
+      "taste": "清淡 咸鲜",
+      "spicy": 0,
+      "calorie_kcal": 570,
+      "calorie_level": "中",
+      "satiety": 5,
+      "scene": "单人 晚餐",
+      "temperature": "热",
+      "ingredients": "牛肉 面条",
+      "avoid_tags": "牛肉",
+      "rating": 4.5,
+      "tags": "热食 清淡 饱腹"
+    }
+  },
+  {
+    "document_id": "dish-0051",
+    "text": "菜名：香菇滑鸡饭。类别：盖饭。口味：咸香 鲜香，不辣。温度：热。主要食材：鸡肉 香菇 米饭。适用场景：单人 晚餐。特点标签：热食 饱腹 不辣。价格：24 元。热量：660 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "香菇滑鸡饭",
+      "category": "盖饭",
+      "price": 24,
+      "taste": "咸香 鲜香",
+      "spicy": 0,
+      "calorie_kcal": 660,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "单人 晚餐",
+      "temperature": "热",
+      "ingredients": "鸡肉 香菇 米饭",
+      "avoid_tags": "无",
+      "rating": 4.5,
+      "tags": "热食 饱腹 不辣"
+    }
+  },
+  {
+    "document_id": "dish-0052",
+    "text": "菜名：玉米排骨汤饭。类别：汤饭。口味：清淡 鲜香，不辣。温度：热。主要食材：排骨 玉米 米饭。适用场景：治愈 晚餐。特点标签：热食 清淡 汤 饱腹。价格：30 元。热量：620 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "玉米排骨汤饭",
+      "category": "汤饭",
+      "price": 30,
+      "taste": "清淡 鲜香",
+      "spicy": 0,
+      "calorie_kcal": 620,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "治愈 晚餐",
+      "temperature": "热",
+      "ingredients": "排骨 玉米 米饭",
+      "avoid_tags": "无",
+      "rating": 4.5,
+      "tags": "热食 清淡 汤 饱腹"
+    }
+  },
+  {
+    "document_id": "dish-0053",
+    "text": "菜名：红烧牛肉面。类别：面食。口味：咸香，辣度 1。温度：热。主要食材：牛肉 面条。适用场景：单人 饱腹。特点标签：热食 饱腹 微辣。价格：28 元。热量：720 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "红烧牛肉面",
+      "category": "面食",
+      "price": 28,
+      "taste": "咸香",
+      "spicy": 1,
+      "calorie_kcal": 720,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "单人 饱腹",
+      "temperature": "热",
+      "ingredients": "牛肉 面条",
+      "avoid_tags": "牛肉",
+      "rating": 4.6,
+      "tags": "热食 饱腹 微辣"
+    }
+  },
+  {
+    "document_id": "dish-0054",
+    "text": "菜名：水果燕麦碗。类别：轻食。口味：酸甜，不辣。温度：冷。主要食材：水果 燕麦 酸奶。适用场景：减脂 早餐。特点标签：低卡 减脂 冷食。价格：25 元。热量：300 千卡，热量等级低。饱腹感：3/5。",
+    "metadata": {
+      "name": "水果燕麦碗",
+      "category": "轻食",
+      "price": 25,
+      "taste": "酸甜",
+      "spicy": 0,
+      "calorie_kcal": 300,
+      "calorie_level": "低",
+      "satiety": 3,
+      "scene": "减脂 早餐",
+      "temperature": "冷",
+      "ingredients": "水果 燕麦 酸奶",
+      "avoid_tags": "乳制品",
+      "rating": 4.4,
+      "tags": "低卡 减脂 冷食"
+    }
+  },
+  {
+    "document_id": "dish-0055",
+    "text": "菜名：凉拌鸡丝荞麦面。类别：轻食。口味：清爽 咸香，不辣。温度：冷。主要食材：鸡肉 荞麦面。适用场景：减脂 夏天。特点标签：低脂 高蛋白 饱腹。价格：27 元。热量：420 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "凉拌鸡丝荞麦面",
+      "category": "轻食",
+      "price": 27,
+      "taste": "清爽 咸香",
+      "spicy": 0,
+      "calorie_kcal": 420,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "减脂 夏天",
+      "temperature": "冷",
+      "ingredients": "鸡肉 荞麦面",
+      "avoid_tags": "无",
+      "rating": 4.4,
+      "tags": "低脂 高蛋白 饱腹"
+    }
+  },
+  {
+    "document_id": "dish-0056",
+    "text": "菜名：红豆汤圆。类别：甜品。口味：甜，不辣。温度：热。主要食材：红豆 糯米。适用场景：夜宵 治愈 甜食。特点标签：甜品 热食 治愈。价格：16 元。热量：360 千卡，热量等级中。饱腹感：3/5。",
+    "metadata": {
+      "name": "红豆汤圆",
+      "category": "甜品",
+      "price": 16,
+      "taste": "甜",
+      "spicy": 0,
+      "calorie_kcal": 360,
+      "calorie_level": "中",
+      "satiety": 3,
+      "scene": "夜宵 治愈 甜食",
+      "temperature": "热",
+      "ingredients": "红豆 糯米",
+      "avoid_tags": "无",
+      "rating": 4.3,
+      "tags": "甜品 热食 治愈"
+    }
+  },
+  {
+    "document_id": "dish-0057",
+    "text": "菜名：奶香玉米汁。类别：饮品。口味：清甜，不辣。温度：热。主要食材：玉米 牛奶。适用场景：早餐 治愈。特点标签：热饮 甜品 预算。价格：12 元。热量：180 千卡，热量等级低。饱腹感：1/5。",
+    "metadata": {
+      "name": "奶香玉米汁",
+      "category": "饮品",
+      "price": 12,
+      "taste": "清甜",
+      "spicy": 0,
+      "calorie_kcal": 180,
+      "calorie_level": "低",
+      "satiety": 1,
+      "scene": "早餐 治愈",
+      "temperature": "热",
+      "ingredients": "玉米 牛奶",
+      "avoid_tags": "乳制品",
+      "rating": 4.2,
+      "tags": "热饮 甜品 预算"
+    }
+  },
+  {
+    "document_id": "dish-0058",
+    "text": "菜名：鱼香肉丝饭。类别：盖饭。口味：酸甜 微辣，辣度 1。温度：热。主要食材：猪肉 木耳 米饭。适用场景：预算 单人。特点标签：饱腹 微辣 预算。价格：24 元。热量：720 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "鱼香肉丝饭",
+      "category": "盖饭",
+      "price": 24,
+      "taste": "酸甜 微辣",
+      "spicy": 1,
+      "calorie_kcal": 720,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "预算 单人",
+      "temperature": "热",
+      "ingredients": "猪肉 木耳 米饭",
+      "avoid_tags": "辣椒",
+      "rating": 4.4,
+      "tags": "饱腹 微辣 预算"
+    }
+  },
+  {
+    "document_id": "dish-0059",
+    "text": "菜名：青椒肉丝饭。类别：盖饭。口味：咸香 微辣，辣度 1。温度：热。主要食材：猪肉 青椒 米饭。适用场景：预算 单人。特点标签：饱腹 微辣 预算。价格：24 元。热量：700 千卡，热量等级高。饱腹感：5/5。",
+    "metadata": {
+      "name": "青椒肉丝饭",
+      "category": "盖饭",
+      "price": 24,
+      "taste": "咸香 微辣",
+      "spicy": 1,
+      "calorie_kcal": 700,
+      "calorie_level": "高",
+      "satiety": 5,
+      "scene": "预算 单人",
+      "temperature": "热",
+      "ingredients": "猪肉 青椒 米饭",
+      "avoid_tags": "辣椒",
+      "rating": 4.3,
+      "tags": "饱腹 微辣 预算"
+    }
+  },
+  {
+    "document_id": "dish-0060",
+    "text": "菜名：香煎鳕鱼饭。类别：轻食。口味：清淡 咸鲜，不辣。温度：热。主要食材：鳕鱼 米饭 蔬菜。适用场景：减脂 高蛋白。特点标签：高蛋白 清淡 不辣。价格：38 元。热量：520 千卡，热量等级中。饱腹感：4/5。",
+    "metadata": {
+      "name": "香煎鳕鱼饭",
+      "category": "轻食",
+      "price": 38,
+      "taste": "清淡 咸鲜",
+      "spicy": 0,
+      "calorie_kcal": 520,
+      "calorie_level": "中",
+      "satiety": 4,
+      "scene": "减脂 高蛋白",
+      "temperature": "热",
+      "ingredients": "鳕鱼 米饭 蔬菜",
+      "avoid_tags": "海鲜",
+      "rating": 4.6,
+      "tags": "高蛋白 清淡 不辣"
+    }
+  },
+  {
+    "document_id": "dish-0061",
+    "text": "菜名：冬瓜丸子汤。类别：汤类。口味：清淡 咸鲜，不辣。温度：热。主要食材：冬瓜 猪肉丸。适用场景：清淡 晚餐。特点标签：清淡 热食 低卡。价格：18 元。热量：260 千卡，热量等级低。饱腹感：2/5。",
+    "metadata": {
+      "name": "冬瓜丸子汤",
+      "category": "汤类",
+      "price": 18,
+      "taste": "清淡 咸鲜",
+      "spicy": 0,
+      "calorie_kcal": 260,
+      "calorie_level": "低",
+      "satiety": 2,
+      "scene": "清淡 晚餐",
+      "temperature": "热",
+      "ingredients": "冬瓜 猪肉丸",
+      "avoid_tags": "无",
+      "rating": 4.3,
+      "tags": "清淡 热食 低卡"
+    }
+  },
+  {
+    "document_id": "dish-0062",
+    "text": "菜名：牛奶小方。类别：甜品。口味：甜，不辣。温度：冷。主要食材：牛奶。适用场景：甜食 治愈。特点标签：甜品 冷食 预算。价格：14 元。热量：240 千卡，热量等级低。饱腹感：1/5。",
+    "metadata": {
+      "name": "牛奶小方",
+      "category": "甜品",
+      "price": 14,
+      "taste": "甜",
+      "spicy": 0,
+      "calorie_kcal": 240,
+      "calorie_level": "低",
+      "satiety": 1,
+      "scene": "甜食 治愈",
+      "temperature": "冷",
+      "ingredients": "牛奶",
+      "avoid_tags": "乳制品",
+      "rating": 4.3,
+      "tags": "甜品 冷食 预算"
+    }
+  },
+  {
+    "document_id": "dish-0063",
+    "text": "菜名：香草冰淇淋。类别：甜品。口味：甜，不辣。温度：冷。主要食材：牛奶 奶油。适用场景：甜食 下午茶 治愈。特点标签：甜品 冷食 冰品 冰淇淋 预算。价格：12 元。热量：260 千卡，热量等级低。饱腹感：1/5。",
+    "metadata": {
+      "name": "香草冰淇淋",
+      "category": "甜品",
+      "price": 12,
+      "taste": "甜",
+      "spicy": 0,
+      "calorie_kcal": 260,
+      "calorie_level": "低",
+      "satiety": 1,
+      "scene": "甜食 下午茶 治愈",
+      "temperature": "冷",
+      "ingredients": "牛奶 奶油",
+      "avoid_tags": "乳制品",
+      "rating": 4.7,
+      "tags": "甜品 冷食 冰品 冰淇淋 预算"
+    }
+  },
+  {
+    "document_id": "dish-0064",
+    "text": "菜名：芒果冰沙。类别：饮品。口味：甜 酸甜，不辣。温度：冷。主要食材：芒果 冰 沙冰。适用场景：甜食 下午茶 夏天。特点标签：甜品 冷食 冰品 冰沙 水果。价格：18 元。热量：210 千卡，热量等级低。饱腹感：1/5。",
+    "metadata": {
+      "name": "芒果冰沙",
+      "category": "饮品",
+      "price": 18,
+      "taste": "甜 酸甜",
+      "spicy": 0,
+      "calorie_kcal": 210,
+      "calorie_level": "低",
+      "satiety": 1,
+      "scene": "甜食 下午茶 夏天",
+      "temperature": "冷",
+      "ingredients": "芒果 冰 沙冰",
+      "avoid_tags": "无",
+      "rating": 4.6,
+      "tags": "甜品 冷食 冰品 冰沙 水果"
+    }
+  },
+  {
+    "document_id": "dish-0065",
+    "text": "菜名：草莓圣代。类别：甜品。口味：甜 酸甜，不辣。温度：冷。主要食材：草莓 牛奶 奶油。适用场景：甜食 下午茶 治愈。特点标签：甜品 冷食 冰品 冰淇淋。价格：16 元。热量：320 千卡，热量等级中。饱腹感：2/5。",
+    "metadata": {
+      "name": "草莓圣代",
+      "category": "甜品",
+      "price": 16,
+      "taste": "甜 酸甜",
+      "spicy": 0,
+      "calorie_kcal": 320,
+      "calorie_level": "中",
+      "satiety": 2,
+      "scene": "甜食 下午茶 治愈",
+      "temperature": "冷",
+      "ingredients": "草莓 牛奶 奶油",
+      "avoid_tags": "乳制品",
+      "rating": 4.6,
+      "tags": "甜品 冷食 冰品 冰淇淋"
+    }
+  },
+  {
+    "document_id": "dish-0066",
+    "text": "菜名：柠檬冰茶。类别：饮品。口味：酸甜 清爽，不辣。温度：冷。主要食材：柠檬 茶 冰。适用场景：下午茶 夏天 快速。特点标签：饮品 冷饮 冷食 冰品 预算。价格：12 元。热量：120 千卡，热量等级低。饱腹感：1/5。",
+    "metadata": {
+      "name": "柠檬冰茶",
+      "category": "饮品",
+      "price": 12,
+      "taste": "酸甜 清爽",
+      "spicy": 0,
+      "calorie_kcal": 120,
+      "calorie_level": "低",
+      "satiety": 1,
+      "scene": "下午茶 夏天 快速",
+      "temperature": "冷",
+      "ingredients": "柠檬 茶 冰",
+      "avoid_tags": "无",
+      "rating": 4.5,
+      "tags": "饮品 冷饮 冷食 冰品 预算"
+    }
+  },
+  {
+    "document_id": "dish-0067",
+    "text": "菜名：草莓奶昔。类别：饮品。口味：甜 酸甜，不辣。温度：冷。主要食材：草莓 牛奶 冰。适用场景：甜食 下午茶 治愈。特点标签：饮品 冷饮 冷食 冰品 甜品。价格：18 元。热量：260 千卡，热量等级低。饱腹感：1/5。",
+    "metadata": {
+      "name": "草莓奶昔",
+      "category": "饮品",
+      "price": 18,
+      "taste": "甜 酸甜",
+      "spicy": 0,
+      "calorie_kcal": 260,
+      "calorie_level": "低",
+      "satiety": 1,
+      "scene": "甜食 下午茶 治愈",
+      "temperature": "冷",
+      "ingredients": "草莓 牛奶 冰",
+      "avoid_tags": "乳制品",
+      "rating": 4.5,
+      "tags": "饮品 冷饮 冷食 冰品 甜品"
+    }
+  },
+  {
+    "document_id": "dish-0068",
+    "text": "菜名：冰美式。类别：饮品。口味：清爽，不辣。温度：冷。主要食材：咖啡 冰。适用场景：下午茶 快速。特点标签：饮品 冷饮 冷食 冰品 低卡。价格：14 元。热量：15 千卡，热量等级低。饱腹感：1/5。",
+    "metadata": {
+      "name": "冰美式",
+      "category": "饮品",
+      "price": 14,
+      "taste": "清爽",
+      "spicy": 0,
+      "calorie_kcal": 15,
+      "calorie_level": "低",
+      "satiety": 1,
+      "scene": "下午茶 快速",
+      "temperature": "冷",
+      "ingredients": "咖啡 冰",
+      "avoid_tags": "无",
+      "rating": 4.4,
+      "tags": "饮品 冷饮 冷食 冰品 低卡"
+    }
+  }
+]

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MealMind 智能美食推荐">
+  <title>MealMind | 今天吃什么</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="MealMind 首页">
+        <span class="brand-mark">M</span>
+        <span>MealMind</span>
+      </a>
+      <span class="status"><i></i> 本地菜品库已连接</span>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">AI 美食推荐助手</p>
+        <h1>把今天的心情，<br><em>变成一顿好饭。</em></h1>
+        <p class="hero-copy">说说你现在想吃什么。口味、预算、天气、忌口，随口描述就好。</p>
+
+        <form id="recommend-form" class="search-panel">
+          <label for="query">今天想吃什么？</label>
+          <textarea
+            id="query"
+            name="query"
+            maxlength="500"
+            required
+            placeholder="例如：今天下雨，想吃点热乎的带汤的，不要辣"
+          ></textarea>
+          <div class="search-footer">
+            <div class="examples" aria-label="示例需求">
+              <button type="button" data-query="今天下雨，想吃点热乎的带汤的，不要辣">热乎带汤</button>
+              <button type="button" data-query="最近在减脂，想吃高蛋白、清淡又饱腹的">减脂饱腹</button>
+              <button type="button" data-query="心情不太好，想吃点甜的治愈一下，预算30元">甜点治愈</button>
+            </div>
+            <button id="submit-button" class="primary-button" type="submit">
+              <span>帮我推荐</span>
+              <b aria-hidden="true">→</b>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section id="loading" class="loading-panel" hidden aria-live="polite">
+        <div class="loader"></div>
+        <div>
+          <strong>正在翻阅本地菜单</strong>
+          <p>分析你的需求并寻找合适的菜品...</p>
+        </div>
+      </section>
+
+      <section id="error-panel" class="error-panel" hidden role="alert">
+        <strong>暂时没能完成推荐</strong>
+        <p id="error-message"></p>
+      </section>
+
+      <section id="results" class="results" hidden aria-live="polite">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">为你找到</p>
+            <h2>这一餐，可以这样选</h2>
+          </div>
+          <button id="reset-button" class="text-button" type="button">换个需求</button>
+        </div>
+
+        <article class="answer-card">
+          <span class="answer-label">MealMind 推荐</span>
+          <p id="answer"></p>
+        </article>
+
+        <div class="candidate-heading">
+          <h3>相关菜品</h3>
+          <span>来自本地菜单检索</span>
+        </div>
+        <div id="dish-grid" class="dish-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span>MealMind · RAG 美食推荐</span>
+      <a href="/docs">开发者接口</a>
+    </footer>
+  </div>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

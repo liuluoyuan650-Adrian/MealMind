@@ -1,0 +1,8 @@
+{
+  "format_version": 1,
+  "embedding_model": "BAAI/bge-small-zh-v1.5",
+  "vector_dimension": 512,
+  "document_count": 68,
+  "source_file": "C:\\PythonProject\\MealMind\\data\\dish_dataset.csv",
+  "source_sha256": "ec1873a146eef0799a40dcc207f59faa4a8958f7a3d4eeef11a378848114da75"
+}
