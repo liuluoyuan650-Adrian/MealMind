@@ -49,8 +49,8 @@
       <section id="loading" class="loading-panel" hidden aria-live="polite">
         <div class="loader"></div>
         <div>
-          <strong>正在翻阅本地菜单</strong>
-          <p>分析你的需求并寻找合适的菜品...</p>
+          <strong id="loading-title">正在翻阅本地菜单</strong>
+          <p id="loading-message">分析你的需求并寻找合适的菜品...</p>
         </div>
       </section>
 
@@ -65,7 +65,10 @@
             <p class="eyebrow">为你找到</p>
             <h2>这一餐，可以这样选</h2>
           </div>
-          <button id="reset-button" class="text-button" type="button">换个需求</button>
+          <div class="result-actions">
+            <button id="retry-button" class="text-button" type="button">重新推荐</button>
+            <button id="reset-button" class="text-button" type="button">换个需求</button>
+          </div>
         </div>
 
         <article class="answer-card">

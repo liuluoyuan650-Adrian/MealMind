@@ -1,11 +1,14 @@
 from __future__ import annotations
 
+import json
 import unittest
+from unittest.mock import patch
 
 from fastapi.testclient import TestClient
 
 from src.rag.api import app
 from src.rag.data_ingestion import build_dish_text
+from src.rag.llm import LLMClient, LLMSettings
 from src.rag.prompts import SYSTEM_PROMPT, build_user_prompt
 from src.rag.retriever import RetrievedDish, extract_negative_preferences, violates_exclusions
 
@@ -68,7 +71,34 @@ class RAGTests(unittest.TestCase):
     def test_frontend_assets_are_available(self) -> None:
         client = TestClient(app)
         self.assertEqual(client.get("/static/styles.css").status_code, 200)
-        self.assertEqual(client.get("/static/app.js").status_code, 200)
+        script = client.get("/static/app.js")
+        self.assertEqual(script.status_code, 200)
+        self.assertIn("JSON.stringify({ query, top_k: 5 })", script.text)
+
+    def test_deepseek_thinking_is_explicitly_disabled(self) -> None:
+        class FakeResponse:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+            def read(self) -> bytes:
+                return b'{"choices":[{"message":{"content":"ok"}}]}'
+
+        client = LLMClient(
+            LLMSettings(
+                api_key="test-key",
+                base_url="https://api.deepseek.com",
+                model="deepseek-v4-pro",
+            )
+        )
+        with patch("src.rag.llm.urlopen", return_value=FakeResponse()) as mocked:
+            self.assertEqual(client.chat("system", "user"), "ok")
+
+        request = mocked.call_args.args[0]
+        payload = json.loads(request.data.decode("utf-8"))
+        self.assertEqual(payload["thinking"], {"type": "disabled"})
 
 
 if __name__ == "__main__":

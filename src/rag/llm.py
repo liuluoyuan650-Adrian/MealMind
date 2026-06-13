@@ -65,6 +65,8 @@ class LLMClient:
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt},
             ],
+            # 显式关闭 DeepSeek 深度思考，避免模型默认配置变化影响响应速度。
+            "thinking": {"type": "disabled"},
             "temperature": temperature,
             "max_tokens": max_tokens,
         }

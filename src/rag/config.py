@@ -7,9 +7,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 
-# DeepSeek 配置：可以直接把新生成的 API Key 填在这里。
-# 注意：不要把含真实密钥的代码上传到 GitHub 或发给其他人。
-DEEPSEEK_API_KEY = "sk-b25ba03174bb42f19ecbd23d9ef9614c"
+# DeepSeek 配置：不要把真实 API Key 写进代码；请通过环境变量 DEEPSEEK_API_KEY 设置。
+DEEPSEEK_API_KEY = "sk-dd48fb56abf24e9a988128721b8920df"
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 DEEPSEEK_MODEL = "deepseek-v4-pro"
 DEEPSEEK_TIMEOUT_SECONDS = 20

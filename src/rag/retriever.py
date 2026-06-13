@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -124,12 +125,19 @@ class FaissDishRetriever:
             raise RuntimeError("FAISS 索引条数与 metadata 条数不一致，请重新建库")
 
     @classmethod
-    def from_settings(cls, settings: RAGSettings | None = None) -> "FaissDishRetriever":
+    def from_settings(cls, settings: RAGSettings | None = None):
         settings = settings or RAGSettings.load()
+        if os.getenv("MEALMIND_FORCE_KEYWORD_RETRIEVER", "").strip() == "1":
+            return KeywordDishRetriever.from_settings(settings, reason="forced by environment")
         # 已建好的索引必须使用 manifest 中记录的模型进行查询。
         # MEALMIND_EMBEDDING_MODEL 只在重新建库时生效，避免启动 API 时环境变量
         # 与旧索引配置发生漂移。
-        return cls(settings.index_dir)
+        try:
+            return cls(settings.index_dir)
+        except RuntimeError as exc:
+            if "Embedding" not in str(exc) and "sentence-transformers" not in str(exc):
+                raise
+            return KeywordDishRetriever.from_settings(settings, reason=str(exc))
 
     def retrieve(self, query: str, top_k: int = 5) -> list[RetrievedDish]:
         if not query.strip():
@@ -167,3 +175,102 @@ class FaissDishRetriever:
             if len(results) >= top_k:
                 break
         return results
+
+
+class KeywordDishRetriever:
+    """Fallback retriever used when the embedding model cannot be loaded locally."""
+
+    FIELD_WEIGHTS = {
+        "name": 5.0,
+        "category": 3.0,
+        "taste": 2.5,
+        "ingredients": 2.0,
+        "tags": 2.0,
+        "scene": 1.5,
+        "temperature": 1.5,
+        "calorie_level": 1.0,
+    }
+
+    PREFERENCE_HINTS = {
+        "热": ("热", "热乎", "带汤", "汤", "下雨", "暖"),
+        "汤": ("汤", "带汤", "热乎", "下雨"),
+        "不辣": ("不辣", "清淡", "不要辣", "免辣"),
+        "辣": ("辣", "麻辣", "香辣"),
+        "低卡": ("低卡", "减脂", "健康", "少油"),
+        "饱腹": ("饱腹", "管饱", "主食"),
+        "便宜": ("便宜", "实惠", "预算"),
+    }
+
+    def __init__(self, index_dir: Path, reason: str = "") -> None:
+        documents_path = index_dir / "documents.json"
+        if not documents_path.exists():
+            raise FileNotFoundError(f"RAG metadata file not found: {documents_path}")
+        self.documents = json.loads(documents_path.read_text(encoding="utf-8"))
+        self.reason = reason
+
+    @classmethod
+    def from_settings(
+        cls, settings: RAGSettings | None = None, reason: str = ""
+    ) -> "KeywordDishRetriever":
+        settings = settings or RAGSettings.load()
+        return cls(settings.index_dir, reason=reason)
+
+    @staticmethod
+    def _contains_any(text: str, aliases: tuple[str, ...]) -> bool:
+        return any(alias and alias in text for alias in aliases)
+
+    def _score_document(self, query: str, document: dict[str, Any]) -> float:
+        metadata = document["metadata"]
+        score = 0.0
+        compact_query = query.replace(" ", "")
+
+        for field, weight in self.FIELD_WEIGHTS.items():
+            value = str(metadata.get(field, ""))
+            if not value:
+                continue
+            field_tokens = split_tags(value) | {value}
+            for token in field_tokens:
+                if token and token in compact_query:
+                    score += weight
+                elif token and len(token) >= 2 and token in document["text"]:
+                    common_chars = set(token) & set(compact_query)
+                    if len(common_chars) >= min(2, len(set(token))):
+                        score += weight * 0.25
+
+        for label, aliases in self.PREFERENCE_HINTS.items():
+            if self._contains_any(compact_query, aliases):
+                searchable = " ".join(
+                    str(metadata.get(field, ""))
+                    for field in ("name", "taste", "ingredients", "tags", "scene", "temperature", "calorie_level")
+                )
+                if label in searchable or any(alias in searchable for alias in aliases):
+                    score += 2.0
+
+        rating = float(metadata.get("rating", 0) or 0)
+        score += rating * 0.05
+        return score
+
+    def retrieve(self, query: str, top_k: int = 5) -> list[RetrievedDish]:
+        if not query.strip():
+            raise ValueError("query 不能为空")
+        if top_k <= 0:
+            raise ValueError("top_k 必须大于 0")
+
+        exclusions = extract_negative_preferences(query)
+        ranked: list[tuple[float, dict[str, Any]]] = []
+        for document in self.documents:
+            metadata = document["metadata"]
+            if violates_exclusions(metadata, exclusions):
+                continue
+            ranked.append((self._score_document(query, document), document))
+
+        ranked.sort(key=lambda item: item[0], reverse=True)
+        return [
+            RetrievedDish(
+                document_id=document["document_id"],
+                score=float(score),
+                text=document["text"],
+                metadata=document["metadata"],
+            )
+            for score, document in ranked[:top_k]
+        ]
